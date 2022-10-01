@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{data.name}}</title>
+    </head> 
+     <body>
+        <p>{{data.id}}</p>
+        <h2 style="color: red; text-decoration: underline;">{{data.name}}</h2>
+        <p>{{data.address}}</p>
+        <p><strong>List of departments</strong></p>
+        {% for dep in data.department %}
+        <p>{{dep.id}}. {{dep.name}}</p>
+        {% endfor %}
+</body>
+
+  </html>
